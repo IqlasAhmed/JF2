@@ -18,7 +18,7 @@ node('master')
     }
     stage ('continuous Delivery')
     {
-        sh 'scp /home/ahmed/.jenkins/workspace/ScriptedPipeline/webapp/target/webapp.war ahmed@192.168.99.32:/var/lib/tomcat8/webapps/ahmPrd.war'
+  sh 'scp /home/ahmed/.jenkins/workspace/ScriptedPipeline/webapp/target/webapp.war ahmed@192.168.99.32:/var/lib/tomcat8/webapps/ahmPrd.war'
     }
 }
 
