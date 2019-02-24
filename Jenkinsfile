@@ -10,7 +10,7 @@ node('master')
     }
     stage ('continuous Deployment')
     {
- sh 'scp /home/ahmed/.jenkins/workspace/ScriptedPipeline/webapp/target/webapp.war ahmed@192.168.99.31:/var/lib/tomcat8/webapps/ahmQA.war'
+ sh 'scp /home/ahmed/.jenkins/workspace/Task2-nj-dev/webapp/target/webapp.war ahmed@192.168.99.31:/var/lib/tomcat8/webapps/ahmQA.war'
     }
    stage ('continuous Testing')
     {
@@ -18,7 +18,7 @@ node('master')
     }
     stage ('continuous Delivery')
     {
-  sh 'scp /home/ahmed/.jenkins/workspace/ScriptedPipeline/webapp/target/webapp.war ahmed@192.168.99.32:/var/lib/tomcat8/webapps/ahmPrd.war'
+  sh 'scp /home/ahmed/.jenkins/workspace/Task2-nj-dev/webapp/target/webapp.war ahmed@192.168.99.24:/var/lib/tomcat8/webapps/ahmPrd.war'
     }
 }
 
