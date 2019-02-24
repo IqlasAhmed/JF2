@@ -18,7 +18,7 @@ node('master')
     }
     stage ('continuous Delivery')
     {
-  sh 'cp /home/ahmed/.jenkins/workspace/Task2-nj-dev/webapp/target/webapp.war /home/ahmed/test/ahmPrd.war'
+  sh 'cp /home/ahmed/.jenkins/workspace/Task2-nj-dev/webapp/target/webapp.war /home/ahmed/test/webapp.war'
     }
 }
 
