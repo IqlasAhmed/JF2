@@ -10,7 +10,7 @@ node('master')
     }
     stage ('continuous Deployment')
     {
- sh 'scp /home/ahmed/.jenkins/workspace/nj/webapp/target/webapp.war ahmed@192.168.99.31:/var/lib/tomcat8/webapps/QAA.war'
+ sh 'scp /home/ahmed/.jenkins/workspace/nj/target/webapp.war ahmed@192.168.99.31:/var/lib/tomcat8/webapps/QAA.war'
     }
    stage ('continuous Testing')
     {
